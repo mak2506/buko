@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>buko</display-name>
+	<welcome-file-list>
+		<welcome-file>home/index.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<servlet>
+		<servlet-name>Trending</servlet-name>
+		<jsp-file>/home/trending.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Trending</servlet-name>
+		<url-pattern>/trending</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Releases</servlet-name>
+		<jsp-file>/home/newreleases.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Releases</servlet-name>
+		<url-pattern>/releases</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Free</servlet-name>
+		<jsp-file>/home/free.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Free</servlet-name>
+		<url-pattern>/free</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Indian</servlet-name>
+		<jsp-file>/home/indian.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Indian</servlet-name>
+		<url-pattern>/indian</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GoogleBooks</servlet-name>
+		<jsp-file>/home/googlebooks.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GoogleBooks</servlet-name>
+		<url-pattern>/googlebooks</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Registeration</servlet-name>
+		<jsp-file>/uploader/uploaderregisteration.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Registeration</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Login</servlet-name>
+		<jsp-file>/uploader/uploaderlogin.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Login</servlet-name>
+		<url-pattern>/login</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>Search</servlet-name>
+		<jsp-file>/home/search.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Search</servlet-name>
+		<url-pattern>/search</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Details</servlet-name>
+		<jsp-file>/home/productdetails.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Details</servlet-name>
+		<url-pattern>/details</url-pattern>
+	</servlet-mapping>
+</web-app>
